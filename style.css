@@ -1,0 +1,80 @@
+/* Write some CSS below */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('./images/basketball-kobe-bryant-wallpaper-preview.jpg'); /* Chemin vers ton image */
+    background-size: cover; /* S'assure que l'image couvre entièrement l'en-tête */
+    background-position: center top 27%; /* Centre l'image */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 150px; 
+}
+
+
+header nav ul {
+    display: flex; /* Continue d'utiliser Flexbox pour répartir les éléments */
+    justify-content: space-around; /* Garde les éléments répartis équitablement */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Assure que la liste occupe toute la largeur de l'en-tête */
+}
+
+header nav ul li {
+    margin: 0;
+    flex-grow: 1; /* Chaque élément de la liste prend une part égale de l'espace disponible */
+    text-align: center; /* Centre le texte dans chaque élément de la liste */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Conserve le texte en gras */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Conserve le contour noir */
+    display: block; /* Assure que le lien remplit l'espace de son élément de liste parent */
+    padding: 20px 0; /* Ajoute un peu d'espace autour du texte pour une meilleure apparence et interaction */
+    font-size: 20px; /* Augmente la taille de la police */
+}
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center the container */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Style supplémentaire pour mieux visualiser les sections */
+section:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* Style pour les sections impaires avec la couleur violet des Lakers */
+section:nth-child(odd) {
+    padding: 20px;
+    margin: 20px 0;
+    color: white; /* Assure une bonne lisibilité sur un fond sombre */
+    background-color: #552583; /* Violet Lakers */
+}
+
+/* Style pour les sections paires avec la couleur or des Lakers */
+section:nth-child(even) {
+    padding: 20px;
+    margin: 20px 0;
+    color: #552583; /* Du violet sur fond or pour une bonne lisibilité */
+    background-color: #FDB927; /* Or Lakers */
+}
